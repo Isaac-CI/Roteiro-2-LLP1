@@ -1,0 +1,8 @@
+#include "Triangulo.h"
+
+Triangulo::Triangulo(double b, double a)
+{
+    nome = triangulo;
+    base = b;
+    altura = a;
+}

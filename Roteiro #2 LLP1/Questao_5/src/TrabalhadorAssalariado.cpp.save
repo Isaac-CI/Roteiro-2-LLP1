@@ -1,0 +1,7 @@
+#include "TrabalhadorAssalariado.h"
+
+TrabalhadorAssalariado::TrabalhadorAssalariado(std::string n, double s)
+{
+    nome = n;
+    salario = s;
+}

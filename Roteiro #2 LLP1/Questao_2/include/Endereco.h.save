@@ -1,0 +1,17 @@
+#ifndef ENDERECO_H
+#define ENDERECO_H
+
+
+class Endereco
+{
+    public:
+        Endereco(std::string, std::string, std::string, std::string, std::string, std::string);
+        std::string toString();
+
+    protected:
+
+    private:
+        std::string rua, numero, bairro, cidade, estado, cep;
+};
+
+#endif // ENDERECO_H

@@ -1,0 +1,23 @@
+#ifndef FUNCIONARIO_H
+#define FUNCIONARIO_H
+
+
+class Funcionario
+{
+    public:
+        Funcionario();
+        std::string getMatricula();
+        std::string getNome();
+        float getSalario();
+        void setMatricula();
+        void setNome();
+        void setSalario();
+
+    protected:
+
+    private:
+        std::string matricula, nome;
+        float salario;
+};
+
+#endif // FUNCIONARIO_H

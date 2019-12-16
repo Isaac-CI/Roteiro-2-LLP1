@@ -1,0 +1,19 @@
+#ifndef RESTAURANTECASEIRO_H
+#define RESTAURANTECASEIRO_H
+
+
+class RestauranteCaseiro
+{
+    public:
+        RestauranteCaseiro(MesaDeRestaurante);
+        void adicionaAoPedido(Pedido, MesaDeRestaurante);
+        double calculaTotalRestaurante();
+
+    protected:
+        vector<MesaDeRestaurante> listaDeMesas;
+
+
+    private:
+};
+
+#endif // RESTAURANTECASEIRO_H

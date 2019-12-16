@@ -1,0 +1,24 @@
+#include <vector>
+#include "Pedido.h"
+#include "MesaDeRestaurante.h"
+#include "RestauranteCaseiro.h"
+
+RestauranteCaseiro::RestauranteCaseiro(MesaDeRestaurante m)
+{
+    listaDeMesas.push_back(m);
+}
+
+void RestauranteCaseiro::adicionaAoPedido(Pedido p, MesaDeRestaurante m)
+{
+    m.listaDePedidos.push_back(p);
+}
+
+double RestauranteCaseiro::calculaTotalRestaurante()
+{
+    double d = 0;
+    for(int i = 0; i < listaDeMesas.size(); i++)
+    {
+        d += listaDeMesas[i].calculaTotal();
+    }
+    return d;
+}

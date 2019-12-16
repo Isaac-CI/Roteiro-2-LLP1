@@ -1,0 +1,17 @@
+#ifndef TRABALHADOR_H
+#define TRABALHADOR_H
+
+
+class Trabalhador
+{
+    public:
+        Trabalhador(std::string, double);
+
+    protected:
+
+    private:
+        std::string nome;
+        double salario;
+};
+
+#endif // TRABALHADOR_H
